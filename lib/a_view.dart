@@ -13,7 +13,7 @@ class AView extends StatefulWidget {
 
 class _AViewState extends State<AView> {
   int _anum = 0;
-  int _bnum = 0;
+  int _bum = 0;
 
   @override
   void initState() {
@@ -35,7 +35,7 @@ class _AViewState extends State<AView> {
         onNotification: (option) {
           if (mounted) {
             setState(() {
-              _bnum++;
+              _bum++;
             });
           }
         });
@@ -62,7 +62,7 @@ class _AViewState extends State<AView> {
           Padding(
             padding: EdgeInsets.symmetric(vertical: 10),
             child: Text(
-              '$_bnum',
+              '$_bum',
               style: TextStyle(color: Colors.black),
             ),
           ),
